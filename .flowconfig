@@ -1,0 +1,27 @@
+[ignore]
+<PROJECT_ROOT>/android/.*
+<PROJECT_ROOT>/ios/.*
+<PROJECT_ROOT>/node_modules/.*
+
+[libs]
+.flow
+node_modules/react-native/flow
+node_modules/react-native/Libraries/react-native/react-native-interface.js
+
+[include]
+
+[options]
+all=true
+emoji=true
+experimental.strict_type_args=true
+munge_underscores=true
+
+module.system=haste
+module.name_mapper='^[./a-zA-Z0-9$_-]+\.\(bmp\|gif\|jpg\|jpeg\|png\|psd\|svg\|webp\|m4v\|mov\|mp4\|mpeg\|mpg\|webm\|aac\|aiff\|caf\|m4a\|mp3\|wav\|html\|pdf\)$' -> 'RelativeImageStub'
+module.name_mapper='^@common\/tests/\(.*\)$' -> '<PROJECT_ROOT>/../common/tests/\1'
+module.name_mapper='^@common\/\(.*\)$' -> '<PROJECT_ROOT>/../common/src/\1'
+module.name_mapper='^@mobile\/resources/\(.*\)$' -> '<PROJECT_ROOT>/resources/\1'
+module.name_mapper='^@mobile\/tests/\(.*\)$' -> '<PROJECT_ROOT>/__tests__/\1'
+module.name_mapper='^@mobile\/\(.*\)$' -> '<PROJECT_ROOT>/src/\1'
+
+suppress_comment=\\(.\\|\n\\)*\\$FlowIssue

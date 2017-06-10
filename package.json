@@ -1,0 +1,55 @@
+{
+	"name": "lunch_and_learn",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"ios": "react-native run-ios",
+		"mystique": "react-native run-ios --device \"Mystique\"",
+		"android": "react-native run-android",
+		"android-e": "emulator -avd 'Nexus_5_Marshmallow' -dns-server 8.8.8.8,8.8.4.4 -netfast -camera-front webcam0 &",
+		"android-release": "VERDANT_SIGNING_RELEASE_KEY_ALIAS=verdant-debug VERDANT_SIGNING_RELEASE_KEY_STORE=debug.keystore VERDANT_SIGNING_RELEASE_KEY_PASSWORD=generic VERDANT_SIGNING_RELEASE_STORE_PASSWORD=generic BITRISE_BUILD_NUMBER=1 react-native run-android --variant Release",
+		"reset": "npm start -- --reset-cache",
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"test": "jest"
+	},
+	"dependencies": {
+		"firebase": "^4.1.2",
+		"lodash": "^4.17.4",
+		"moment": "^2.18.1",
+		"native-base": "^2.1.5",
+		"object-mapper": "^3.0.1",
+		"react": "16.0.0-alpha.12",
+		"react-native": "0.45.0",
+		"react-native-vector-icons": "^4.2.0",
+		"react-navigation": "^1.0.0-beta.11",
+		"react-redux": "^5.0.5",
+		"redux": "^3.6.0",
+		"redux-logger": "^3.0.6",
+		"redux-thunk": "^2.2.0"
+	},
+	"devDependencies": {
+		"babel-core": "^6.25.0",
+		"babel-eslint": "^7.2.3",
+		"babel-jest": "20.0.3",
+		"babel-plugin-module-resolver": "^2.7.1",
+		"babel-preset-react-native": "1.9.2",
+		"eslint": "^3.19.0",
+		"eslint-config-airbnb": "^15.0.1",
+		"eslint-config-airbnb-base": "^11.2.0",
+		"eslint-config-samsao-base": "^1.0.1",
+		"eslint-config-samsao-mobile": "^1.0.1",
+		"eslint-config-samsao-web": "^1.0.1",
+		"eslint-import-resolver-babel-module": "^3.0.0",
+		"eslint-plugin-filenames": "^1.2.0",
+		"eslint-plugin-import": "^2.3.0",
+		"eslint-plugin-jsx-a11y": "^5.0.3",
+		"eslint-plugin-react": "^7.0.1",
+		"eslint-plugin-react-native": "^2.3.2",
+		"flow-bin": "0.45",
+		"jest": "20.0.4",
+		"react-test-renderer": "16.0.0-alpha.12"
+	},
+	"jest": {
+		"preset": "react-native"
+	}
+}

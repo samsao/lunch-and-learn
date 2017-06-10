@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "title": "NSOperations with Raj",
+    "date": "2017-06-20 14:30",
+    "description": "A basic introduction to NSOperation and NSOperationQueue, their common use cases and intricacies.",
+    "speaker": {
+      "id": 1234,
+      "name": "Rajinder Ramgarrhia",
+      "nickname": "Raj",
+      "team": "iOS",
+      "position": "Lead iOS Developer",
+      "picture": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAgPAAAAJDU1YzNhYmI4LThlNmQtNGQ5NS1iYTEyLTM1Y2ExZDk3ZDkxYw.jpg"
+    }
+  },
+  {
+    "id": "2",
+    "title": "How to work with widgets",
+    "date": "2017-06-21 13:30",
+    "description": "A basic introduction to NSOperation and NSOperationQueue, their common use cases and intricacies.",
+    "speaker": {
+      "id": 1234,
+      "name": "Kenza Iraki",
+      "nickname": "Kenza",
+      "team": "iOS",
+      "position": "iOS Developer",
+      "picture": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA2hAAAAJDAwMjA1YTFlLTZlMjgtNDc3MS04MjkwLTc3MjcyODFjYzRlMw.jpg"
+    }
+  },
+  {
+    "id": "3",
+    "title": "NSOperations with Raj",
+    "date": "2017-06-20 14:30",
+    "description": "A basic introduction to NSOperation and NSOperationQueue, their common use cases and intricacies.",
+    "speaker": {
+      "id": 1234,
+      "name": "Rajinder Ramgarrhia",
+      "nickname": "Raj",
+      "team": "iOS",
+      "position": "iOS Developer",
+      "picture": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAgPAAAAJDU1YzNhYmI4LThlNmQtNGQ5NS1iYTEyLTM1Y2ExZDk3ZDkxYw.jpg"
+    }
+  },
+  {
+    "id": "4",
+    "title": "NSOperations with Raj",
+    "date": "2017-06-20 14:30",
+    "description": "A basic introduction to NSOperation and NSOperationQueue, their common use cases and intricacies.",
+    "speaker": {
+      "id": 1234,
+      "name": "Rajinder Ramgarrhia",
+      "nickname": "Raj",
+      "team": "iOS",
+      "position": "iOS Developer",
+      "picture": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAgPAAAAJDU1YzNhYmI4LThlNmQtNGQ5NS1iYTEyLTM1Y2ExZDk3ZDkxYw.jpg"
+    }
+  },
+  {
+    "id": "5",
+    "title": "NSOperations with Raj",
+    "date": "2017-06-20 14:30",
+    "description": "A basic introduction to NSOperation and NSOperationQueue, their common use cases and intricacies.",
+    "speaker": {
+      "id": 1234,
+      "name": "Rajinder Ramgarrhia",
+      "nickname": "Raj",
+      "team": "iOS",
+      "position": "iOS Developer",
+      "picture": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAgPAAAAJDU1YzNhYmI4LThlNmQtNGQ5NS1iYTEyLTM1Y2ExZDk3ZDkxYw.jpg"
+    }
+  }
+]
