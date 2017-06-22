@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Notification Component renders properly in failure mode 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FF1212",
+      "height": 40,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#FFF",
+        "fontSize": 14,
+      }
+    }
+  >
+    Failed
+  </Text>
+</View>
+`;
+
+exports[`Notification Component renders properly in stateless mode 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#DDD",
+      "height": 40,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#000",
+        "fontSize": 14,
+      }
+    }
+  >
+    Info message
+  </Text>
+</View>
+`;
+
+exports[`Notification Component renders properly in success mode 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#00AE58",
+      "height": 40,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#FFF",
+        "fontSize": 14,
+      }
+    }
+  >
+    Succeeded
+  </Text>
+</View>
+`;

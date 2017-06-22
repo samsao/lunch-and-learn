@@ -1,14 +1,15 @@
 module.exports = {
-    'parser': 'babel-eslint',
+  parser: 'babel-eslint',
 
-    'extends': [
-        'samsao-mobile',
-    ],
+  extends: ['samsao-mobile'],
 
-    'settings': {
-        'import/parser': 'babel-eslint',
-        'import/resolver': {
-            'babel-module': {},
-        },
+  settings: {
+    'import/parser': 'babel-eslint',
+    'import/resolver': {
+      'babel-module': {},
     },
+  },
+  env: {
+    jest: true,
+  },
 };

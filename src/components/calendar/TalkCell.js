@@ -9,9 +9,7 @@ import {
 } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import _ from 'lodash';
 
-import Talk from '@mobile/models/talk';
 import { selectTalk } from '@mobile/reducers/talk_selection';
 import { Cell } from '@mobile/components/reusable';
 import {

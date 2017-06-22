@@ -1,14 +1,18 @@
 import React from 'react';
-import { ListView, Text } from 'react-native';
+import { ListView, View } from 'react-native';
 import Talk from '@mobile/models/talk';
 import TalkCell from '@mobile/components/calendar/TalkCell';
+import { Notification } from '@mobile/components/reusable';
+import * as ComponentStatus from '@mobile/components/reusable/ComponentStatus';
 
 type Props = {
   talks: Talk[]
 };
 
 type State = {
-  dataSource: any
+  dataSource: any,
+  succeeded: boolean,
+  failed: boolean
 };
 
 export default class TalkView extends React.Component {
@@ -17,7 +21,7 @@ export default class TalkView extends React.Component {
 
   constructor(props: Props) {
     super(props);
-    this.state = { dataSource: null };
+    this.state = { dataSource: null, succeeded: false, failed: false };
   }
 
   componentWillMount() {
@@ -27,12 +31,34 @@ export default class TalkView extends React.Component {
     this.setState({ dataSource: ds.cloneWithRows(this.props.talks) });
   }
 
+  topView() {
+    return (
+      <View>
+        <Notification
+          status={ComponentStatus.FAILURE}
+          text={'There was an error'}
+          display={this.state.failed}
+          duration={3000}
+        />
+        <Notification
+          status={ComponentStatus.SUCCESS}
+          text={'Success'}
+          display={true}
+          duration={3000}
+        />
+      </View>
+    );
+  }
+
   render() {
     return (
-      <ListView
-        dataSource={this.state.dataSource}
-        renderRow={(talk) => <TalkCell talk={talk} />}
-      />
+      <View>
+        {this.topView()}
+        <ListView
+          dataSource={this.state.dataSource}
+          renderRow={(talk) => <TalkCell talk={talk} />}
+        />
+      </View>
     );
   }
 }

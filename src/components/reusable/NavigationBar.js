@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
 export default class NavigationBar extends React.Component {
   props: {
     name: string
-  }
+  };
   render() {
     return (
       <View style={styles.viewStyle}>
